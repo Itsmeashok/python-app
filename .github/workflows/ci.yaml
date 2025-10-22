@@ -32,7 +32,7 @@ jobs:
     - name: Install argocd
       shell: bash
       run: |
-        curl -ksSL -O https://argocd-server.argocd/download/argocd-linux-amd64
+        curl -L https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64 -o argocd
         chmod +x argocd
         sudo mv ./argocd /usr/local/bin/argocd
     - name: Argocd app sync
