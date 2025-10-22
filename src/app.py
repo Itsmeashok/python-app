@@ -10,13 +10,13 @@ def details():
     return jsonify({
         'time': datetime.datetime.now().strftime("%I:%M:%S %p  on %B %d, %Y"),
         'hostname':socket.gethostname(),
-        'message': 'You are doing great, human!'
+        'message': 'You are doing great, human!',
     })
 
 @app.route('/api/v1/healthz')
 
 def health():
-    return jsonify({ 'status':'up', 'message': 'You are doing great, human!' }), 200
+    return jsonify({ 'status':'up' }), 200
 
 if __name__ == '__main__':
 
