@@ -5,6 +5,7 @@ metadata:
   description: python app that displays the current time, hostname, and message
   annotations:
     github.com/project-slug: Itsmeashok/python-app
+    backstage.io/techdocs-ref: dir:.
 
 spec:
   type: service
