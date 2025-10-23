@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: athapach/python-app
   pullPolicy: IfNotPresent
-  tag: "3643d4"
+  tag: "0e10ec"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
